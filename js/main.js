@@ -4,9 +4,10 @@ basicTimeline
   .add({
     targets: '.logo',
     translateY: {
-     value: ['-4vh', 0],
+     value: ['-2.5vh', 0],
      duration: 1200
     },
+    delay: 250
   })
   .add({
     targets: '.logo-img-2',
@@ -30,14 +31,6 @@ basicTimeline
     translateX: -400,
     easing: 'easeOutExpo',
     rotate: 360
-  })
-  .add({
-    targets: '.logo-img-1',
-    rotate: {
-     value: 360,
-     duration: 3000,
-     easing: 'easeOutExpo'
-    },
   });
 
 var purpose = anime({
