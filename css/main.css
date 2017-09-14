@@ -28,11 +28,32 @@ img {
 
 .logo {
   position: fixed;
+  display: flex;
   top: 4%;
   left: calc(50% - 50px);
   width: 75px;
   height: 75px;
   z-index: 1;
+}
+
+.logo-img-2 {
+  position: absolute;
+  left: 0;
+}
+
+.logo-img-3 {
+  position: absolute;
+  left: 0;
+}
+
+.logo-img-4 {
+  position: absolute;
+  left: 0;
+}
+
+.logo-img-5 {
+  position: absolute;
+  left: 0;
 }
 
 .contact {
