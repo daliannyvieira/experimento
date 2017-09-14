@@ -28,7 +28,7 @@ img {
 
 .logo {
   position: fixed;
-  top: 0;
+  top: 4%;
   left: calc(50% - 50px);
   width: 75px;
   height: 75px;
@@ -117,7 +117,7 @@ img {
 .purpose {
   width: 34%;
   padding: 1em 1.25em 0 0.75em;
-  margin: 0 0 1em 2em;
+  margin: 0 0 3em 2em;
   color: #fff;
   font: 400 1.2em sans-serif;
   z-index: 2;

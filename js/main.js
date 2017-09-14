@@ -1,7 +1,7 @@
 var logo = anime({
   targets: '.logo',
   translateY: {
-    value: '4vh',
+    value: [-20, 0],
     duration: 800
   },
   rotate: {
@@ -15,7 +15,7 @@ var logo = anime({
 var purpose = anime({
  targets: '.oi',
  translateY: {
-   value: '-4vh',
+   value: [40, 0],
    duration: 800
  },
  delay: 2250
