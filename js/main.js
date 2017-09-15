@@ -1,5 +1,4 @@
 // Move background
-
 const wrap = document.querySelector('.intro-img');
 
 document.body.addEventListener('mousemove', function (event) {
@@ -13,7 +12,6 @@ document.body.addEventListener('mousemove', function (event) {
 
 
 // Move intro-text
-
 const purpose = anime({
  targets: '.intro-text',
  translateY: {
@@ -25,9 +23,7 @@ const purpose = anime({
 
 
 // Hover logo
-
 const startAnimation = function(event){
-
   event.preventDefault();
 
   const basicTimeline = anime.timeline();
