@@ -1,4 +1,20 @@
-var purpose = anime({
+// Move background
+
+const wrap = document.querySelector('.intro-img');
+
+document.body.addEventListener('mousemove', function (event) {
+  const halfWidth = window.innerWidth / 2;
+  const halfHeight = window.innerHeight / 2;
+  const dX = -(halfWidth - event.clientX) * 0.015;
+  const dY = (halfHeight - event.clientY) * 0.015;
+
+  wrap.style.transform = 'rotateX(' + dY + 'deg) rotateY(' + dX + 'deg)';
+});
+
+
+// Move intro-text
+
+const purpose = anime({
  targets: '.intro-text',
  translateY: {
    value: ['4vh', 0],
@@ -7,22 +23,14 @@ var purpose = anime({
  delay: 400
 });
 
-var wrap = document.querySelector('.intro-img');
 
-document.body.addEventListener('mousemove', function (event) {
-  var halfWidth = window.innerWidth / 2;
-  var halfHeight = window.innerHeight / 2;
-  var dX = -(halfWidth - event.clientX) * 0.015;
-  var dY = (halfHeight - event.clientY) * 0.015;
+// Hover logo
 
-  wrap.style.transform = 'rotateX(' + dY + 'deg) rotateY(' + dX + 'deg)';
-});
-
-var startAnimation = function(event){
+const startAnimation = function(event){
 
   event.preventDefault();
 
-  var basicTimeline = anime.timeline();
+  const basicTimeline = anime.timeline();
 
   basicTimeline
     .add({
@@ -69,6 +77,3 @@ document.querySelector('.logo').addEventListener('mouseenter', startAnimation);
 document.querySelector('.logo').addEventListener('mouseout', function(event){
   document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
 });
-
-
-
