@@ -22,8 +22,6 @@ var startAnimation = function(event){
 
   event.preventDefault();
 
-  console.log('oi')
-
   var basicTimeline = anime.timeline();
 
   basicTimeline
@@ -57,12 +55,19 @@ var startAnimation = function(event){
       translateX: -400,
       easing: 'easeOutExpo',
       rotate: 360,
-      complete: function(anim) {
-        if (anim.completed) {
-          document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
-        }
-      }
+//      complete: function(anim) {
+//        if (anim.completed) {
+//          document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
+//        }
+//      }
     });
   }
 
 document.querySelector('.logo').addEventListener('mouseenter', startAnimation);
+
+document.querySelector('.logo').addEventListener('mouseout', function(event){
+  document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
+});
+
+
+
