@@ -28,8 +28,14 @@ var startAnimation = function(event){
     .add({
       targets: '.logo',
       translateY: {
-       value: ['-2.5vh', 0],
-       duration: 1200
+       value: [-15, 0],
+       easing: 'easeOutExpo',
+       duration: 800
+      },
+      scaleX: {
+       value: [1.05, 1],
+       easing: 'easeOutExpo',
+       duration: 800
       },
       delay: 250
     })
