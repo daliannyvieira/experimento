@@ -1,10 +1,10 @@
 var purpose = anime({
- targets: '.oi',
+ targets: '.intro-text',
  translateY: {
    value: ['4vh', 0],
    duration: 800
  },
- delay: 5000
+ delay: 400
 });
 
 var wrap = document.querySelector('.intro-img');
