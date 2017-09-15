@@ -55,11 +55,6 @@ var startAnimation = function(event){
       translateX: -400,
       easing: 'easeOutExpo',
       rotate: 360,
-//      complete: function(anim) {
-//        if (anim.completed) {
-//          document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
-//        }
-//      }
     });
   }
 

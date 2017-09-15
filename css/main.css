@@ -36,6 +36,10 @@ img {
   z-index: 1;
 }
 
+.logo-img-1 {
+  z-index: 2;
+}
+
 .logo-img-2 {
   position: absolute;
   left: 0;
