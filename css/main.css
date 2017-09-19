@@ -29,7 +29,7 @@ img {
 .logo {
   position: fixed;
   display: flex;
-  top: 2vh;
+  top: 1vh;
   left: calc(50% - 50px);
   width: 75px;
   height: 75px;

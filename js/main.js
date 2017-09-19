@@ -1,9 +1,9 @@
 window.addEventListener("load", function load(event){
 
-    const purpose = anime({
+    const showPurpose = anime({
      targets: '.intro-text',
      translateY: {
-       value: [15, 0],
+       value: ['5vh', 0],
        easing: 'easeOutExpo',
        duration: 700
      },
@@ -13,7 +13,7 @@ window.addEventListener("load", function load(event){
     const showLogo = anime({
       targets: '.logo',
       translateY: {
-       value: [0, 15],
+       value: [0, '3vh'],
        easing: 'easeOutExpo',
        duration: 700
       },
@@ -23,7 +23,23 @@ window.addEventListener("load", function load(event){
        duration: 700
       },
       delay: 750
-    })
+    });
+
+    const showContact = anime({
+      targets: '.contact',
+      translateX: {
+       value: [0, '-1vw'],
+       easing: 'easeOutExpo',
+       duration: 700
+      },
+      opacity: {
+        value: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: 1000
+      },
+      delay: 900
+    });
 
     window.removeEventListener("load", load, false); //remove listener, no longer needed
 },false);
