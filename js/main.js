@@ -1,3 +1,34 @@
+window.addEventListener("load", function load(event){
+
+    const purpose = anime({
+     targets: '.intro-text',
+     translateY: {
+       value: [15, 0],
+       easing: 'easeOutExpo',
+       duration: 700
+     },
+     delay: 250
+    });
+
+    const showLogo = anime({
+      targets: '.logo',
+      translateY: {
+       value: [0, 15],
+       easing: 'easeOutExpo',
+       duration: 700
+      },
+      scaleX: {
+       value: [1.05, 1],
+       easing: 'easeOutExpo',
+       duration: 700
+      },
+      delay: 750
+    })
+
+    window.removeEventListener("load", load, false); //remove listener, no longer needed
+},false);
+
+
 // Move background
 const wrap = document.querySelector('.intro-img');
 
@@ -10,16 +41,7 @@ document.body.addEventListener('mousemove', function (event) {
   wrap.style.transform = 'rotateX(' + dY + 'deg) rotateY(' + dX + 'deg)';
 });
 
-
 // Move intro-text
-const purpose = anime({
- targets: '.intro-text',
- translateY: {
-   value: ['4vh', 0],
-   duration: 800
- },
- delay: 400
-});
 
 
 // Hover logo
@@ -30,40 +52,30 @@ const startAnimation = function(event){
 
   basicTimeline
     .add({
-      targets: '.logo',
-      translateY: {
-       value: [-15, 0],
-       easing: 'easeOutExpo',
-       duration: 800
-      },
-      scaleX: {
-       value: [1.05, 1],
-       easing: 'easeOutExpo',
-       duration: 800
-      },
-      delay: 250
-    })
-    .add({
       targets: '.logo-img-2',
       translateX: -100,
       easing: 'easeOutExpo',
+      duration: 600
     })
     .add({
       targets: '.logo-img-3',
       translateX: -200,
       easing: 'easeOutExpo',
-      rotate: 360
+      rotate: 360,
+      duration: 600
     })
     .add({
       targets: '.logo-img-4',
       translateX: -300,
       easing: 'easeOutExpo',
+      duration: 600,
       rotate: 360
     })
     .add({
       targets: '.logo-img-5',
       translateX: -400,
       easing: 'easeOutExpo',
+      duration: 600,
       rotate: 360,
     });
   }
@@ -73,3 +85,4 @@ document.querySelector('.logo').addEventListener('mouseenter', startAnimation);
 document.querySelector('.logo').addEventListener('mouseout', function(event){
   document.querySelector('.logo').removeEventListener('mouseenter', startAnimation)
 });
+
