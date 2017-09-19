@@ -47,9 +47,9 @@ window.addEventListener("load", function load(event){
         value: [0, 1],
         easing: 'easeOutExpo',
         duration: 1000,
-        delay: 1200
+        delay: 1250
       },
-      delay: 1200
+      delay: 1250
     });
 
     window.removeEventListener("load", load, false); //remove listener, no longer needed
