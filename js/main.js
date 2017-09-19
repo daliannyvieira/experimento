@@ -39,7 +39,7 @@ window.addEventListener("load", function load(event){
     const showContact = anime({
       targets: '.contact',
       translateX: {
-       value: [0, '-2vw'],
+       value: ['-1vw', '-2vw'],
        easing: 'easeOutExpo',
        duration: 700
       },
