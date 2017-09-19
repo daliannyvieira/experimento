@@ -18,9 +18,9 @@ window.addEventListener("load", function load(event){
     const showLogo = anime({
       targets: '.logo',
       translateY: {
-       value: [-10, '3vh'],
+       value: ['-10vh', '3vh'],
        easing: 'easeOutExpo',
-       duration: 700
+       duration: 900
       },
       scaleX: {
        value: [1.05, 1],
