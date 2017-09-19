@@ -22,6 +22,12 @@ window.addEventListener("load", function load(event){
        easing: 'easeOutExpo',
        duration: 900
       },
+      opacity: {
+        value: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: 250
+      },
       scaleX: {
        value: [1.05, 1],
        easing: 'easeOutExpo',
