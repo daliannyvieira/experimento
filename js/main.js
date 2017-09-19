@@ -5,9 +5,14 @@ window.addEventListener("load", function load(event){
      translateY: {
        value: ['5vh', 0],
        easing: 'easeOutExpo',
-       duration: 700
+       duration: 1700
      },
-     delay: 250
+     opacity: {
+        value: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1500,
+      },
+     delay: 750
     });
 
     const showLogo = anime({
@@ -22,13 +27,13 @@ window.addEventListener("load", function load(event){
        easing: 'easeOutExpo',
        duration: 700
       },
-      delay: 750
+      delay: 250
     });
 
     const showContact = anime({
       targets: '.contact',
       translateX: {
-       value: [0, '-1vw'],
+       value: [0, '-0.5vw'],
        easing: 'easeOutExpo',
        duration: 700
       },
