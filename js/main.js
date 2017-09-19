@@ -12,13 +12,13 @@ window.addEventListener("load", function load(event){
         easing: 'easeOutExpo',
         duration: 1500,
       },
-     delay: 750
+     delay: 850
     });
 
     const showLogo = anime({
       targets: '.logo',
       translateY: {
-       value: [0, '3vh'],
+       value: [-10, '3vh'],
        easing: 'easeOutExpo',
        duration: 700
       },
@@ -33,7 +33,7 @@ window.addEventListener("load", function load(event){
     const showContact = anime({
       targets: '.contact',
       translateX: {
-       value: [0, '-0.5vw'],
+       value: [0, '-2vw'],
        easing: 'easeOutExpo',
        duration: 700
       },
@@ -41,9 +41,9 @@ window.addEventListener("load", function load(event){
         value: [0, 1],
         easing: 'easeOutExpo',
         duration: 1000,
-        delay: 1000
+        delay: 1200
       },
-      delay: 900
+      delay: 1200
     });
 
     window.removeEventListener("load", load, false); //remove listener, no longer needed
